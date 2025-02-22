@@ -36,6 +36,11 @@ await setupDatabase();
 // Routes
 app.use('/identify', identifyRouter);
 
+// Health check route
+app.get('/health', (req, res) => {
+  res.status(200).json({ status: 'UP' });
+});
+
 // Error handling middleware
 app.use(notFoundHandler);
 app.use(errorHandler);
