@@ -41,6 +41,10 @@ app.get('/health', (req, res) => {
   res.status(200).json({ status: 'UP' });
 });
 
+app.get('/', (req, res) => {
+  res.status(200).send('<html><body><h1>Status: UP</h1><p>User: abhinavtiwari</p></body></html>');
+});
+
 // Error handling middleware
 app.use(notFoundHandler);
 app.use(errorHandler);
