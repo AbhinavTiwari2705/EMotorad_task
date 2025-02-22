@@ -42,7 +42,7 @@ app.get('/health', (req, res) => {
 });
 
 app.get('/', (req, res) => {
-  res.status(200).send('<html><body><h1>User: Abhinav Tiwari</h1><h2><a href="https://abhinavtiwari.tech">abhinavtiwari.tech</a></h2></body></html>');
+  res.status(200).send('<html><body><h1>Developer: Abhinav Tiwari</h1><h2><a href="https://abhinavtiwari.tech">abhinavtiwari.tech</a></h2></body></html>');
 });
 
 // Error handling middleware
